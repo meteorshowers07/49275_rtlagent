@@ -1,0 +1,399 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-04",
+  "track": "rtl",
+  "development_source": "root rtl_agent; post-freeze development, NOT a confirmed sealed commit",
+  "before_snapshot_sha256": "b03a540b768ae8d47ceea771d3e6f91c021722c2b161d25ce9a1bd43c838d7df",
+  "external_evidence": [
+    {
+      "id": "external_hls_l4",
+      "status": "report_only_missing_raw_evidence",
+      "source": "测试报告_20261103.md",
+      "detail": "异机 HLS L4、模型 pair 与耗时仅报告记载；49275_work 未包含原始结果"
+    },
+    {
+      "id": "external_rtl_l2_crash",
+      "status": "report_only_missing_raw_evidence",
+      "source": "测试报告_20261103.md",
+      "detail": "异机 RTL L2 与综合崩溃原始 JSON、日志、Tcl 未带回；根因不作定论"
+    },
+    {
+      "id": "historical_local_rtl_l3",
+      "status": "historical_separate_environment",
+      "source": "rtl_agent/docs/local_validation_20261102.md",
+      "detail": "历史环境的结论单列，不与异机记录合并"
+    },
+    {
+      "id": "frozen_commit",
+      "status": "unknown",
+      "detail": "未连接线上仓库，不能从本地无 .git 推断未提交或赛事得分"
+    }
+  ],
+  "local_evidence": [
+    {
+      "path": "docs/validation_20261104/real_reset_tests.log",
+      "sha256": "3c20c4cb2c946e74420369289a5722b72327654bdcb1b4170f6c93e76c4516da"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_asynchronous_reset_is_rejected_before_clock_edge/commands.json",
+      "sha256": "3c082bfe71f9df902517b236260ff0f53b6a45321fdd2b47a5a6906666f35f30"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_asynchronous_reset_is_rejected_before_clock_edge/compile_0.log",
+      "sha256": "d92a2eb2ab52a2504b01223c10ed27356ed270c109cc3da19c718eaa87213f85"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_asynchronous_reset_is_rejected_before_clock_edge/compile_1.log",
+      "sha256": "dcda6402f13bb69ca6bbdbf6e1b74eba67b88587fc9744439a1b1c0970b21543"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_asynchronous_reset_is_rejected_before_clock_edge/counter_tb.sv",
+      "sha256": "3cf21b342ce240054a2ce8b93cc76d5f897632006a4f409901ac5ca6154545a6"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_asynchronous_reset_is_rejected_before_clock_edge/design.sv",
+      "sha256": "bbf01fb7dfe0410cfc88d7e8b18c3aac7f3c3e4ced7dc8c36051a12f156afcaf"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_asynchronous_reset_is_rejected_before_clock_edge/simulation.log",
+      "sha256": "137d000f61ac0052cc615c560e1976ba5bcc2bd2410a61fd5ff074bf16361186"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_asynchronous_reset_is_rejected_before_clock_edge/xelab.log",
+      "sha256": "81c561a9cadaffb73eed6f091645bcfbbb99862c2868189a483e9d56b0a97795"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_asynchronous_reset_is_rejected_before_clock_edge/xsim.log",
+      "sha256": "c6b068a446893ce40d89b73200c14766ce77be7ee3b7ddeb01194d7d82cd067f"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_asynchronous_reset_is_rejected_before_clock_edge/xvlog.log",
+      "sha256": "611952a9bb26736854033a46969d719673bcc98e5547f1700e9694d10551540e"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_broken_hold_behavior_is_rejected/commands.json",
+      "sha256": "3c082bfe71f9df902517b236260ff0f53b6a45321fdd2b47a5a6906666f35f30"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_broken_hold_behavior_is_rejected/compile_0.log",
+      "sha256": "580f1b47548670663f94ffda194913d57a3d5a2c3857293c5a17e204b4562d2a"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_broken_hold_behavior_is_rejected/compile_1.log",
+      "sha256": "dcda6402f13bb69ca6bbdbf6e1b74eba67b88587fc9744439a1b1c0970b21543"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_broken_hold_behavior_is_rejected/counter_tb.sv",
+      "sha256": "3cf21b342ce240054a2ce8b93cc76d5f897632006a4f409901ac5ca6154545a6"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_broken_hold_behavior_is_rejected/design.sv",
+      "sha256": "17c14de9fd6f3b3a60ceff00df76c216d5705aa844e5445ff63084b687762803"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_broken_hold_behavior_is_rejected/simulation.log",
+      "sha256": "f60d272633aba253b60280bb3cb17594ce4963811504277cdcb52925fc1ab26e"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_broken_hold_behavior_is_rejected/xelab.log",
+      "sha256": "81c561a9cadaffb73eed6f091645bcfbbb99862c2868189a483e9d56b0a97795"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_broken_hold_behavior_is_rejected/xsim.log",
+      "sha256": "f543d2163baa80f8a6c73256065d27d1cab9a1f8f36d56c99370d29f80b5064a"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_broken_hold_behavior_is_rejected/xvlog.log",
+      "sha256": "60fedf0906c7e8462f4a8a32e56040843c503b5bc498e92ea6bf34cabda2aec6"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_correct_synchronous_reset_passes/commands.json",
+      "sha256": "3c082bfe71f9df902517b236260ff0f53b6a45321fdd2b47a5a6906666f35f30"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_correct_synchronous_reset_passes/compile_0.log",
+      "sha256": "0c7784506e63f4fb0f71305e8023969d72feec48c9904143d69cf6a68868fb3c"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_correct_synchronous_reset_passes/compile_1.log",
+      "sha256": "dcda6402f13bb69ca6bbdbf6e1b74eba67b88587fc9744439a1b1c0970b21543"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_correct_synchronous_reset_passes/counter_tb.sv",
+      "sha256": "3cf21b342ce240054a2ce8b93cc76d5f897632006a4f409901ac5ca6154545a6"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_correct_synchronous_reset_passes/design.sv",
+      "sha256": "70e84a7973e68f5ac8adb6e15370ba3167bd2a5d0b3c240cb3a27178378722c9"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_correct_synchronous_reset_passes/simulation.log",
+      "sha256": "8cf38f8cba9fb22f617b87bc4eef53724a19495c898aadbe1fcf49fc9692c192"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_correct_synchronous_reset_passes/xelab.log",
+      "sha256": "81c561a9cadaffb73eed6f091645bcfbbb99862c2868189a483e9d56b0a97795"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_correct_synchronous_reset_passes/xsim.log",
+      "sha256": "2328bc5d3414fd5bb3d8dea8aa730372bcb28726468aa0034e62e7b63b7e3940"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_correct_synchronous_reset_passes/xvlog.log",
+      "sha256": "4937780f56c5a8161807b041aceba4a24c91c745dbe8a8993c66790a6ee2349d"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_enable_gating_reset_is_rejected/commands.json",
+      "sha256": "3c082bfe71f9df902517b236260ff0f53b6a45321fdd2b47a5a6906666f35f30"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_enable_gating_reset_is_rejected/compile_0.log",
+      "sha256": "111ea00c0ebb5cde8dfac4873628a5cc959e0be0f311df719eff85c42d4ba1f6"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_enable_gating_reset_is_rejected/compile_1.log",
+      "sha256": "dcda6402f13bb69ca6bbdbf6e1b74eba67b88587fc9744439a1b1c0970b21543"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_enable_gating_reset_is_rejected/counter_tb.sv",
+      "sha256": "3cf21b342ce240054a2ce8b93cc76d5f897632006a4f409901ac5ca6154545a6"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_enable_gating_reset_is_rejected/design.sv",
+      "sha256": "28757e486ae8738aac2df10fa5d1ef54124ca1c6c82de22c9918b1fb48071015"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_enable_gating_reset_is_rejected/simulation.log",
+      "sha256": "55f60afd1be1def7686df77085fe4206aab549eeff509e55bac44dbb826f7485"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_enable_gating_reset_is_rejected/xelab.log",
+      "sha256": "81c561a9cadaffb73eed6f091645bcfbbb99862c2868189a483e9d56b0a97795"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_enable_gating_reset_is_rejected/xsim.log",
+      "sha256": "0dba32112c9d5fe49883b93fedf67196e9a9b765976ab2eca716fd6a0cb7b9e7"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_enable_gating_reset_is_rejected/xvlog.log",
+      "sha256": "22ebbccb5c1207049afebe4ec87c0d947f67efda4022c27039ccb86d67add8fb"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_enable_priority_over_reset_is_rejected/commands.json",
+      "sha256": "3c082bfe71f9df902517b236260ff0f53b6a45321fdd2b47a5a6906666f35f30"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_enable_priority_over_reset_is_rejected/compile_0.log",
+      "sha256": "156d19f0acace15bead8160d46b4de04ba4809b07beab8274464c5874e8a12cb"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_enable_priority_over_reset_is_rejected/compile_1.log",
+      "sha256": "dcda6402f13bb69ca6bbdbf6e1b74eba67b88587fc9744439a1b1c0970b21543"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_enable_priority_over_reset_is_rejected/counter_tb.sv",
+      "sha256": "3cf21b342ce240054a2ce8b93cc76d5f897632006a4f409901ac5ca6154545a6"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_enable_priority_over_reset_is_rejected/design.sv",
+      "sha256": "5fcbb004c981d6db7faee61b1475af93ee4d76c86e509a9587b00c19cda161d5"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_enable_priority_over_reset_is_rejected/simulation.log",
+      "sha256": "b99375a7c95ae5e4b2f710809b3f0bde48c18677ad6a9cbf259501d3594b919a"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_enable_priority_over_reset_is_rejected/xelab.log",
+      "sha256": "81c561a9cadaffb73eed6f091645bcfbbb99862c2868189a483e9d56b0a97795"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_enable_priority_over_reset_is_rejected/xsim.log",
+      "sha256": "144308fe402bf75cc65d866735fee7ad17c68159dc5a20f9c7fd90d7a89bddca"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_enable_priority_over_reset_is_rejected/xvlog.log",
+      "sha256": "ae83ff3c35e34fe24a71b62b40a5e5d9affd29c3713b2687a402f4e300262c15"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_explicit_timeunit_preserved/commands.json",
+      "sha256": "3c082bfe71f9df902517b236260ff0f53b6a45321fdd2b47a5a6906666f35f30"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_explicit_timeunit_preserved/compile_0.log",
+      "sha256": "d86116d5483caacfa318147798fd33aea88edbee398159451f5040fee59185bd"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_explicit_timeunit_preserved/compile_1.log",
+      "sha256": "dcda6402f13bb69ca6bbdbf6e1b74eba67b88587fc9744439a1b1c0970b21543"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_explicit_timeunit_preserved/counter_tb.sv",
+      "sha256": "3cf21b342ce240054a2ce8b93cc76d5f897632006a4f409901ac5ca6154545a6"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_explicit_timeunit_preserved/design.sv",
+      "sha256": "f08ff13e3df7ee2d5f6a2e459bfdb43000c002a601c2c12dbeae2016283e9302"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_explicit_timeunit_preserved/simulation.log",
+      "sha256": "034f9705cb033e054f57de0312f426bb67d60c986a7b64bd0b584f198d958df5"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_explicit_timeunit_preserved/xelab.log",
+      "sha256": "81c561a9cadaffb73eed6f091645bcfbbb99862c2868189a483e9d56b0a97795"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_explicit_timeunit_preserved/xsim.log",
+      "sha256": "63ffba1d790c920c2788dabce63e74dff87923610fe88b0b7ef2dc6272b68150"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_explicit_timeunit_preserved/xvlog.log",
+      "sha256": "de6fc97758e9fd2ae9a35daced61cd610aaa444e3e5dddc460249d55fc40635e"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_inverted_reset_polarity_is_rejected/commands.json",
+      "sha256": "3c082bfe71f9df902517b236260ff0f53b6a45321fdd2b47a5a6906666f35f30"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_inverted_reset_polarity_is_rejected/compile_0.log",
+      "sha256": "086eebfd7fa13d0aca23003fa1d8bcb4b89f73cc9c9028a784883d583b686825"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_inverted_reset_polarity_is_rejected/compile_1.log",
+      "sha256": "dcda6402f13bb69ca6bbdbf6e1b74eba67b88587fc9744439a1b1c0970b21543"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_inverted_reset_polarity_is_rejected/counter_tb.sv",
+      "sha256": "3cf21b342ce240054a2ce8b93cc76d5f897632006a4f409901ac5ca6154545a6"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_inverted_reset_polarity_is_rejected/design.sv",
+      "sha256": "89695182598773b76ea53dce0b2fbdc04c89ac61b4095836fbfd39e90ef0d2c2"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_inverted_reset_polarity_is_rejected/simulation.log",
+      "sha256": "0e47de0f9004752ccec3f1b13776789211a545a2cf9be4b01f981d030b4f0606"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_inverted_reset_polarity_is_rejected/xelab.log",
+      "sha256": "81c561a9cadaffb73eed6f091645bcfbbb99862c2868189a483e9d56b0a97795"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_inverted_reset_polarity_is_rejected/xsim.log",
+      "sha256": "2a35b59ed0bff71b57983e89eccbf2da08398a011dbdab2f92497a62c6dec9bb"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_inverted_reset_polarity_is_rejected/xvlog.log",
+      "sha256": "e8929f46357005945a488f969b9d84cee6b69587a7bd9ef21cda149277cacedd"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_missing_design_timescale_uses_xelab_default/commands.json",
+      "sha256": "3c082bfe71f9df902517b236260ff0f53b6a45321fdd2b47a5a6906666f35f30"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_missing_design_timescale_uses_xelab_default/compile_0.log",
+      "sha256": "5d97254569b0a90a8b748223e2c743c18e12553c073dce8bd0750866c9b49fc6"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_missing_design_timescale_uses_xelab_default/compile_1.log",
+      "sha256": "dcda6402f13bb69ca6bbdbf6e1b74eba67b88587fc9744439a1b1c0970b21543"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_missing_design_timescale_uses_xelab_default/counter_tb.sv",
+      "sha256": "3cf21b342ce240054a2ce8b93cc76d5f897632006a4f409901ac5ca6154545a6"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_missing_design_timescale_uses_xelab_default/design.sv",
+      "sha256": "1de9f420c6c328f9895f4e797e3657f76463cf5aa25df527b09f964ed661b227"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_missing_design_timescale_uses_xelab_default/simulation.log",
+      "sha256": "42d3cc695a3dac6d47a3d24877317476b744c03c104611fa47dee83060db84d7"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_missing_design_timescale_uses_xelab_default/xelab.log",
+      "sha256": "81c561a9cadaffb73eed6f091645bcfbbb99862c2868189a483e9d56b0a97795"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_missing_design_timescale_uses_xelab_default/xsim.log",
+      "sha256": "c7cae64cfc87817c731cdac23b67579da40c5313fe876f2a772e4bcce428f9d0"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_missing_design_timescale_uses_xelab_default/xvlog.log",
+      "sha256": "d09c41da196db8465e34ef6a99baffa599e275cd61e781febd7096a292bc2e41"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_missing_timescale_does_not_hide_async_reset/commands.json",
+      "sha256": "3c082bfe71f9df902517b236260ff0f53b6a45321fdd2b47a5a6906666f35f30"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_missing_timescale_does_not_hide_async_reset/compile_0.log",
+      "sha256": "49f22948880d750f8dba21861ea6cb0ef123cb3cec734936286f434922dc1385"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_missing_timescale_does_not_hide_async_reset/compile_1.log",
+      "sha256": "dcda6402f13bb69ca6bbdbf6e1b74eba67b88587fc9744439a1b1c0970b21543"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_missing_timescale_does_not_hide_async_reset/counter_tb.sv",
+      "sha256": "3cf21b342ce240054a2ce8b93cc76d5f897632006a4f409901ac5ca6154545a6"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_missing_timescale_does_not_hide_async_reset/design.sv",
+      "sha256": "5d6479cae01686731a5f54edad7b34ee9a5d41f9d971775878ed871ac23b7f76"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_missing_timescale_does_not_hide_async_reset/simulation.log",
+      "sha256": "413c7a5cfa59d192e7db41c574cad8eaea6442eaf4bb3e26ce8b67be07b4338d"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_missing_timescale_does_not_hide_async_reset/xelab.log",
+      "sha256": "81c561a9cadaffb73eed6f091645bcfbbb99862c2868189a483e9d56b0a97795"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_missing_timescale_does_not_hide_async_reset/xsim.log",
+      "sha256": "dff6a23f1491bd9e618df22eaeda0728f42e408c8d2f31769527e4f2e7b13e50"
+    },
+    {
+      "path": "docs/validation_20261104/reset_cases/test_missing_timescale_does_not_hide_async_reset/xvlog.log",
+      "sha256": "8afeed81b61496011be889ec61ab10b6379b72c447d688fd18adf1eebb940ac6"
+    },
+    {
+      "path": "docs/validation_20261104/software_tests.log",
+      "sha256": "83d247e8bd4e08deec4a5a880440f8dad7fdae5f0b32c731b19d063fac6fe612"
+    },
+    {
+      "path": "docs/validation_2025_2_20261104/README.md",
+      "sha256": "d336b6a1c82aadf3519fa7c535e059b15744a3028547273d2ad56ec70710f8e1"
+    },
+    {
+      "path": "docs/validation_2025_2_20261104/result.json",
+      "sha256": "2d08a379717ea321cb2146f63f39e0657f6ab8c1db7af475a780505280510817"
+    },
+    {
+      "path": "docs/validation_2025_2_20261104/software_tests.log",
+      "sha256": "f7d8975868e5f39439cd6b7d9b7e0aa84d702693d20af19c21ecd7e287e3c635"
+    }
+  ],
+  "returned_external_files": [
+    {
+      "path": "49275_work/config_hls_7b.json",
+      "sha256": "b251c119bf95d96b68eb772228720c0376772e1e20f2006ad8ad10d4316660ea"
+    },
+    {
+      "path": "49275_work/config_hls_real.json",
+      "sha256": "65428f2cbb99c01544a1963cf183404762bee95731d3c8788645200d25ce65dc"
+    }
+  ],
+  "current_toolchain_policy": "2025.2 only; user-confirmed 2026-11-04",
+  "version_policy_before_snapshot_sha256": "a406679dfcfbbe367b76868ce701cc2a071a009e272a928f4f300eabf1859626",
+  "version_policy_tests": {
+    "toolchain": "2025.2",
+    "tests": 250,
+    "passed": 219,
+    "skipped": 31,
+    "failed": 0,
+    "errors": 0,
+    "scope": "software regression; synthetic loopback inference, no new GPU/model/EDA capability claim"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "toolchain": "2025.2",
+  "tests": 250,
+  "passed": 219,
+  "skipped": 31,
+  "failed": 0,
+  "errors": 0,
+  "scope": "software regression; synthetic loopback inference, no new GPU/model/EDA capability claim"
+}

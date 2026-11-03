@@ -1,0 +1,19 @@
+{
+  "source": "rtlagent2026-master",
+  "files": {
+    "baseline.py": "17aaa609d4dbd36a94d1390e39f769394448f8588f3ccdd2bd37db9e34ed05e2",
+    "run_baseline.sh": "5c46c40d32c0cf4c4e1dc52ae12e60f8396a0deccafaa4e6f69d7316a3482e75",
+    "docs/API_CONTRACT.md": "aadc5844a0125c86399dc26ab7d1ba3aab14bb2a4bd33457ab596fe24105c78f",
+    "docs/SUBMISSION.md": "56e39cb3a5f90f4e072fd5e0595610be0cf0632ec6eecafe97de79f48f541491",
+    "example/Dockerfile": "16a3e95c3bba6383a6babc157ffbd74e87cac8ef157daccf901705066e0ba32a",
+    "example/manifest.json": "649851c5d0a644c6f1f69803281028503adfa3d2aa0086e7583d5d92d549c139",
+    "example/serve/serve_api.py": "bd87e530cd0004a4437f663801bb9de0e42c0a9d366daa42d3e5d2cfb08bb9a4"
+  },
+  "effective_contract": {
+    "path": "docs/official/API_CONTRACT.md",
+    "sha256": "2c65d92372c0f1b1436b0bbedf09295876a7f8e501bdfbeabc06d0ce4ddf54c3",
+    "kind": "project adaptation; original reference hashes remain under files",
+    "toolchain": "2025.2",
+    "authority": "user confirmation, 2026-11-04"
+  }
+}
