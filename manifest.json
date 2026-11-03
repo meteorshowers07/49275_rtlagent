@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "track": "rtl",
+  "model": {
+    "name": "rtl-local",
+    "source": null,
+    "revision": "UNPINNED-development-only",
+    "quantization": "none",
+    "measured_vram_gb": null,
+    "finetuned": false,
+    "finetune_weights_url": null
+  },
+  "auxiliary_models": [],
+  "context": {
+    "max_model_len": 32768,
+    "max_output_tokens": 16384,
+    "rope_scaling": null
+  },
+  "generation": {
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    },
+    "reasoning_effort": null
+  },
+  "serving": {
+    "backend": "vllm",
+    "version": "UNVALIDATED",
+    "start_command": "./serve/start.sh",
+    "port": 8000
+  },
+  "endpoints": {
+    "solve": "./run.sh",
+    "baseline": "./run_baseline.sh",
+    "http_port": 7860
+  },
+  "agent": {
+    "max_rounds": 3,
+    "tools": [
+      "check_interface",
+      "lint",
+      "synth"
+    ],
+    "skills": [
+      "rtl_rules.md"
+    ]
+  },
+  "development_status": "post-freeze development repair; model/GPU deployment NOT validated",
+  "toolchain": {
+    "vivado": "2025.2",
+    "vitis": "2025.2",
+    "version_policy": "exact; no alternate release accepted"
+  }
+}

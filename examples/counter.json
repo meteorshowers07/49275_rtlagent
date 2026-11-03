@@ -1,0 +1,9 @@
+{
+  "task_id": "smoke_counter",
+  "prompt": "Implement a SystemVerilog module counter(input logic clk, input logic rst, input logic en, output logic [3:0] q). On each rising clock edge, synchronous active-high rst sets q to 0 with priority over en. Otherwise, when en is high increment q modulo 16; when en is low hold q. Return the complete module.",
+  "top": "counter",
+  "clock_port": "clk",
+  "testbench_files": ["counter_tb.sv"],
+  "testbench_top": "counter_tb",
+  "simulation_pass_marker": "RTL_TEST_PASS:counter"
+}

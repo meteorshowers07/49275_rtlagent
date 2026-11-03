@@ -1,0 +1,21 @@
+{
+  "team_folder": "49275_rtlagent",
+  "track": "rtl",
+  "revision": "20261104-official-interface-2025.2",
+  "sealed_commit": null,
+  "deployment_validated": false,
+  "development_source": "rtl_agent",
+  "official_reference": "rtlagent2026-master",
+  "excludes": [
+    "data",
+    "third_party",
+    "outputs",
+    "tmp",
+    "__pycache__",
+    ".git"
+  ],
+  "toolchain": {
+    "vivado": "2025.2",
+    "vitis": "2025.2"
+  }
+}
