@@ -1,0 +1,14 @@
+test_asynchronous_reset_is_rejected_before_clock_edge (tests.test_reset_semantics.ResetSemanticsTests.test_asynchronous_reset_is_rejected_before_clock_edge) ... ok
+test_broken_hold_behavior_is_rejected (tests.test_reset_semantics.ResetSemanticsTests.test_broken_hold_behavior_is_rejected) ... ok
+test_correct_synchronous_reset_passes (tests.test_reset_semantics.ResetSemanticsTests.test_correct_synchronous_reset_passes) ... ok
+test_enable_gating_reset_is_rejected (tests.test_reset_semantics.ResetSemanticsTests.test_enable_gating_reset_is_rejected) ... ok
+test_enable_priority_over_reset_is_rejected (tests.test_reset_semantics.ResetSemanticsTests.test_enable_priority_over_reset_is_rejected) ... ok
+test_explicit_timeunit_preserved (tests.test_reset_semantics.ResetSemanticsTests.test_explicit_timeunit_preserved) ... ok
+test_inverted_reset_polarity_is_rejected (tests.test_reset_semantics.ResetSemanticsTests.test_inverted_reset_polarity_is_rejected) ... ok
+test_missing_design_timescale_uses_xelab_default (tests.test_reset_semantics.ResetSemanticsTests.test_missing_design_timescale_uses_xelab_default) ... ok
+test_missing_timescale_does_not_hide_async_reset (tests.test_reset_semantics.ResetSemanticsTests.test_missing_timescale_does_not_hide_async_reset) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 31.321s
+
+OK

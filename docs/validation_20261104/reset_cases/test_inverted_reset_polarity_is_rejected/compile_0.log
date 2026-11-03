@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/meteorshowers007/Desktop/FPGA/output/development_repair_20261103/rtl_reset_evidence/test_inverted_reset_polarity_is_rejected/design.sv" into library work
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/meteorshowers007/Desktop/FPGA/output/development_repair_20261103/rtl_reset_evidence/test_inverted_reset_polarity_is_rejected/counter_tb.sv" into library work
+INFO: [VRFC 10-311] analyzing module counter_tb

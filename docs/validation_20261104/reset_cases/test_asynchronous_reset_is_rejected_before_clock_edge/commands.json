@@ -1,0 +1,30 @@
+[
+  {
+    "command": [
+      "D:\\AMDDesignTools\\2025.2\\Vivado\\bin\\xvlog.BAT",
+      "--sv",
+      "design.sv",
+      "counter_tb.sv"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "D:\\AMDDesignTools\\2025.2\\Vivado\\bin\\xelab.BAT",
+      "counter_tb",
+      "-s",
+      "reset_test",
+      "-timescale",
+      "1ps/1ps"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "D:\\AMDDesignTools\\2025.2\\Vivado\\bin\\xsim.BAT",
+      "reset_test",
+      "-runall"
+    ],
+    "returncode": 0
+  }
+]
